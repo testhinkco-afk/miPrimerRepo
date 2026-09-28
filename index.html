@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi E-commerce</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>🛒 Mi Tienda</h1>
+
+        <div class="carrito">
+            🛍️ Carrito:
+            <span id="contador">0</span>
+        </div>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <h2>Productos</h2>
+
+        <section class="productos">
+
+            <!-- PRODUCTO 1 -->
+            <article class="producto">
+                <div class="imagen">👕</div>
+
+                <h3>Camiseta</h3>
+
+                <p>Camiseta básica de algodón</p>
+
+                <strong>$50.000</strong>
+
+                <button onclick="agregarAlCarrito(50000)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+
+            <!-- PRODUCTO 2 -->
+            <article class="producto">
+                <div class="imagen">👟</div>
+
+                <h3>Tenis deportivos</h3>
+
+                <p>Tenis para uso diario</p>
+
+                <strong>$180.000</strong>
+
+                <button onclick="agregarAlCarrito(180000)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+
+            <!-- PRODUCTO 3 -->
+            <article class="producto">
+                <div class="imagen">🎒</div>
+
+                <h3>Morral</h3>
+
+                <p>Morral para trabajo o estudio</p>
+
+                <strong>$90.000</strong>
+
+                <button onclick="agregarAlCarrito(90000)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+        </section>
+
+
+        <!-- RESUMEN DEL CARRITO -->
+        <section class="resumen">
+
+            <h2>Resumen del carrito</h2>
+
+            <p>
+                Productos:
+                <span id="cantidad">0</span>
+            </p>
+
+            <p>
+                Total:
+                $<span id="total">0</span>
+            </p>
+
+            <button onclick="finalizarCompra()">
+                Finalizar compra
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Mi Tienda</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
